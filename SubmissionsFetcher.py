@@ -14,9 +14,9 @@ class DataFetcher:
         self.db_conn = Database()
 
     def connect_to_reddit_api(self):
-        self.reddit = praw.Reddit(user_agent='Comments analyzer (by /u/Matiux69)',
-                                  client_id='Qboi6_Of5VQIBw', client_secret="pPl8lqiD0zrMf3eWecZgPy5qzDM",
-                                  username='Matiux69', password='htuze35h78#$1WH%')
+        self.reddit = praw.Reddit(user_agent='Comments analyzer',
+                                  client_id='', client_secret="",
+                                  username='', password='')
 
     def get_recent_submissions_from_reddit_api(self):
         self.connect_to_reddit_api()
